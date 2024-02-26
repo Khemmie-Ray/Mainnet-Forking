@@ -3,12 +3,11 @@ import { IFactory } from "../typechain-types";
 
 async function main() {
  
-  const tokenFactory = await ethers.deployContract("TokenFactory");
-  await tokenFactory.waitForDeployment();
+  const tokenFactoryAddress = "0x927C4efB8f87584C84c71C34FdA752498D4aE383";
+  const tokenFactoryContract = await ethers.getContractAt("IFactory", tokenFactoryAddress);
 
-  console.log(
-    `TokenFactory was deployed to ${tokenFactory.target}`
-  );
+  const createTx = tokenFactoryContract.createToken();
+  
 }
 
 // We recommend this pattern to be able to use async/await everywhere
