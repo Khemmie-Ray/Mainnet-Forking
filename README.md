@@ -6,9 +6,9 @@ This project is ascript that interacts with at least two functions on the Uniswa
 
 - Add liquidity
 
-![Screenshot](./assets/screenshot.png)
+![Screenshot](./Mainnet-forking-task//assets/screenshot.png)
 
-![Screenshot](./assets/Screenshot2.png)
+![Screenshot](./Mainnet-forking-task/assets/Screenshot2.png)
 
 ## Transaction Hash for Factory Contract
 
